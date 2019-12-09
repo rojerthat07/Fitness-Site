@@ -1,5 +1,5 @@
-@import '/src/styles/partials/about';
-@import '/src/styles/partials/default';
+@import 'about';
+@import 'default';
 
 
 
@@ -352,20 +352,13 @@ footer {
   margin-bottom:-16px;
   min-width:500px;
   width:100%;
-  height:120px;
-
+  height:auto;
+  border-bottom: 3px solid blue;
 
  
 }
 
-.footer2 {
-  background:color(secondarycolor1);
-  margin-bottom:-15px;
-  height:7px;
-  min-width:500px;
-  width:100%;
 
-}
 
 
 

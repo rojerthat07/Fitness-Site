@@ -7,26 +7,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>BMI Calculator | HOME</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="/src/frameworks/fontawesome-free-5.9.0-web/css/all.min.css">
+  <link rel="stylesheet" href="/build/styles/style.min.css" />
+  <link rel="stylesheet" href="/src/frameworks/fontawesome-free-5.11.2-web/css/all.min.css">
+  <link rel="stylesheet" href="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <script src="/src/frameworks/jquery/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
   <div id="bg-overlay"></div>
 
-  <header class="main">
-    <div id="brandname">
-      <i class="fas fa-calculator"></i>
-      <a href="index.html">
-        <h3>BMI CALCULATOR</h3>
-      </a>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT DEVELOPER</a></li>
-    </ul>
-  </header>
+  </nav>
 
   <section class="main">
     <div class="sec-div1">
@@ -144,16 +155,10 @@
     </div>
 
   </footer>
-  <div class="footer2">
-    <p></p>
-  </div>
+
 
   <!-- SCRIPT EXTENSION -->
-  <!-- SCRIPT EXTENSION -->
-  <!-- SCRIPT EXTENSION -->
-  <script src="javascript.js"></script>
-  <!-- SCRIPT EXTENSION -->
-  <!-- SCRIPT EXTENSION -->
+  <script src="/src/scripts/javascript.js"></script>
   <!-- SCRIPT EXTENSION -->
 </body>
 
