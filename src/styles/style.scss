@@ -1,5 +1,10 @@
-@import 'about';
-@import 'default';
+@import '1-helpers/1-helpers';
+@import '0-plugins/0-plugins';
+@import '2-base/2-base';
+@import '3-layout/3-layout';
+@import '4-modules/4-modules';
+@import '5-templates/5-templates';
+
 
 
 
@@ -21,14 +26,11 @@ $alert: rgb(251, 255, 0);
 
 $phone: 625px;
 
-
-
 @mixin phone {
   @media (max-width: #{$phone}) {
     @content;
   }
 }
-
 
 
 @function color($color-name) {
@@ -42,7 +44,7 @@ body {
       rgba(0, 0, 0, 0.3),  
       rgba(0, 0, 0, 0.3)
   ),
-  url(images/man_workout_press_79949_1024x768.jpg);
+  url(/build/images/man_workout_press_79949_1024x768.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -53,84 +55,6 @@ label {
   line-height: 1.5em;
 }
 
-//HEADER HEADER HEADER HEADER HEADER HEADER HEADER
-
-header.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px solid color(primarycolor2);
-  background-color: color(alphaprimarycolor1);
-  height: 50px;
-  min-width: 500px;
-  
-
-  @include phone {
-    display: flex;
-    flex-direction: column;
-    height: 60px;
-  }
-
-  h3 {
-    display: inline;
-  }
-
-  div#brandname {
-    text-align: center;
-    color: color(secondarycolor1);
-    margin-left: 15px;
-
-    a, a:visited {
-      text-align: center;
-      color: color(secondarycolor1);
-      margin-left: 15px;
-      text-decoration: none;
-    }
-
-    @include phone {
-      margin-top: 5px;
-    }
-
-    & a:hover,
-    &:hover {
-      color: color(alphasecondarycolor2);
-    }
-  }
-
-  ul {
-    font-family: "Roboto Medium";
-    font-size: .9em;
-
-    @include phone {
-      padding: 5px;
-    
-    }
-
-    li {
-      float: left;
-
-
-      & a,
-      & a:active {
-        color: color(secondarycolor1);
-        text-decoration: none;
-        padding: 1em;
-
-        @include phone {
-          padding: 0px 10px 0px 10px;
-        }
-      }
-
-      & a:hover,
-      & a:visited {
-        background-color: color(primarycolor1);
-        color: color(secondarycolor2);
-      }
-    }
-  }
-}
-
-//HEADER HEADER HEADER HEADER HEADER HEADER HEADER
 
 //SECTION SECTION SECTION SECTION SECTION SECTION
 section.main {
