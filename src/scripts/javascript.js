@@ -32,6 +32,7 @@ function calculateBMI() {
   var div3 = document.getElementById("sec-div3");
   var tips = document.getElementById("result-conclusion-tips");
   var bodyTypes = document.getElementById("body-types");
+  var tipsForYou = document.getElementById("tips-for-you").innerHTML = "Some of the TIPS for you";
   //CHECKING IF THE INPUT FIELDS ARE EMPTY
   if (height == "" && weight == "") {
     bmi.value = '"Please put your Statistics"';
@@ -54,7 +55,7 @@ function calculateBMI() {
         continue;
       }
       textConclusions[i].style.display = "none";
-      bodyTypes.style.display = "none";
+
     }
   } else if (bmi.value <= 24.9) {
     conclusion.style.color = colorResult[1];
@@ -67,7 +68,7 @@ function calculateBMI() {
         continue;
       }
       textConclusions[i].style.display = "none";
-      bodyTypes.style.display = "none";
+
     }
   } else if (bmi.value <= 29.9) {
     conclusion.style.color = colorResult[0];
@@ -80,7 +81,7 @@ function calculateBMI() {
         continue;
       }
       textConclusions[i].style.display = "none";
-      bodyTypes.style.display = "none";
+
     }
   } else if (bmi.value >= 30) {
     conclusion.style.color = colorResult[0];
@@ -93,7 +94,7 @@ function calculateBMI() {
         continue;
       }
       textConclusions[i].style.display = "none";
-      bodyTypes.style.display = "none";
+
     }
   }
 }

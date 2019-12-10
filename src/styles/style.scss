@@ -9,7 +9,7 @@
 //Section
 section.main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
   text-align: center;
   min-width: 460px;
@@ -98,13 +98,11 @@ section.main {
     border: none;
     margin: 0;
     height: auto;
-   
-      h3 {
-        padding: 5px;
-        color: white;
-      }
   
-
+   .result{
+    margin:3em;
+   
+   }
     i {
       color: rgb(145, 255, 0);
       font-size: 20px;
@@ -114,9 +112,10 @@ section.main {
     h3 {
       color: rgb(211, 255, 17);
       background-color: $color5;
-    font-size: 1em;
+      font-size: 1em;
       margin: 0;
       padding: 10px;
+  
     }
 
     a {
