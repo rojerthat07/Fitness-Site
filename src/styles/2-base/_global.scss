@@ -1,4 +1,17 @@
 body {
     font-family: 'Roboto Light';
+    background: $color1;
 }
+  
+  label {
+    line-height: 1.5em;
+  }
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+
+
 

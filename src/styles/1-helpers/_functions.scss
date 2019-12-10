@@ -1,3 +1,4 @@
+//FONT FUNCTIONS
 $fontVariant:(
     "font1":'Roboto Thin',
     "font2":'Roboto Light',
@@ -9,3 +10,20 @@ $fontVariant:(
 @function font($fontName){
     @return map-get($fontVariant,$fontName);
 }
+
+//COLOR FUNCTION
+$maincolors: (
+  primarycolor1: #041f60,
+  primarycolor2: #0476d0,
+  secondarycolor1: #2ceef0,
+  secondarycolor2: #b4f5f0,
+  alphaprimarycolor1: rgba(4, 31, 96, 0.7),
+  alphaprimarycolor2: rgba(4, 118, 208, 0.9),
+  alpha2primarycolor2: rgba(4, 118, 208, 0.7),
+  alphasecondarycolor1: rgba(44, 238, 240, 0.9),
+  alphasecondarycolor2: rgba(180, 245, 240, 0.9)
+);
+
+@function color($color-name) {
+    @return map-get($maincolors, $color-name);
+  }

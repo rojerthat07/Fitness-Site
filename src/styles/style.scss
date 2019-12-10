@@ -6,47 +6,7 @@
 @import '5-templates/5-templates';
 
 
-
-
-$maincolors: (
-  primarycolor1: #041f60,
-  primarycolor2: #0476d0,
-  secondarycolor1: #2ceef0,
-  secondarycolor2: #b4f5f0,
-  alphaprimarycolor1: rgba(4, 31, 96, 0.7),
-  alphaprimarycolor2: rgba(4, 118, 208, 0.9),
-  alpha2primarycolor2: rgba(4, 118, 208, 0.7),
-  alphasecondarycolor1: rgba(44, 238, 240, 0.9),
-  alphasecondarycolor2: rgba(180, 245, 240, 0.9)
-);
-
-$bad: rgb(255, 0, 0);
-$good: rgb(0, 255, 13);
-$alert: rgb(251, 255, 0);
-
-
-
-
-@function color($color-name) {
-  @return map-get($maincolors, $color-name);
-}
-
-body {
-  height:100%;
-  width:100%;
-  background: $color1;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: "Roboto Thin";
-}
-
-label {
-  line-height: 1.5em;
-}
-
-
-//SECTION SECTION SECTION SECTION SECTION SECTION
+//Section
 section.main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -185,30 +145,8 @@ section.main {
     background-color: color(secondarycolor1);
     margin: 10px;
     padding: 5px 15px;
-
   }
 }
-
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-  appearance: none;
-}
-
-
-//Footer
-footer {
-  background-color:$color4;
-  padding:15px;
-  color:white;
-  text-align:center;
-  margin-bottom:-16px;
-  min-width:500px;
-  width:100%;
-  height:auto;
-  border-bottom: 3px solid blue;
-}
-
-
 
 
 
