@@ -113,8 +113,8 @@ section.main {
 
     h3 {
       color: rgb(211, 255, 17);
-      background-color: color(alphaprimarycolor1);
-      outline: 3px solid color(alphaprimarycolor1);
+      background-color: $color5;
+    font-size: 1em;
       margin: 0;
       padding: 10px;
     }
@@ -148,7 +148,7 @@ section.main {
   input {
     border: 2px solid color(primarycolor1);
     border-radius: 4px;
-    background-color: color(secondarycolor1);
+    background-color: $color1 ;
     margin: 10px;
     padding: 5px 15px;
   }
