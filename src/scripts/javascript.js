@@ -23,6 +23,7 @@ function calculateBMI() {
     (overweightConclusion = document.getElementById("overweight")),
     (obeseConclusion = document.getElementById("obese"))
   ];
+  var conclusion = document.getElementById("result-conclusion");
   //COMPUTATIONS
   var bmi = document.getElementById("bmi");
   var heightPow = Math.pow(height, 2);
@@ -31,9 +32,6 @@ function calculateBMI() {
   var div3 = document.getElementById("sec-div3");
   var tips = document.getElementById("result-conclusion-tips");
   var bodyTypes = document.getElementById("body-types");
-
-
-
   //CHECKING IF THE INPUT FIELDS ARE EMPTY
   if (height == "" && weight == "") {
     bmi.value = '"Please put your Statistics"';
