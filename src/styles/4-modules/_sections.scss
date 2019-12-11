@@ -1,0 +1,18 @@
+.two__column{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin:3em auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+.column{
+    margin:90%;
+    margin: auto;
+    img{
+        width:100%;
+    }
+}
