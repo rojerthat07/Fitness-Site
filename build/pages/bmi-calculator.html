@@ -47,30 +47,41 @@
 
 
     <!--BMI CALCULATOR-->
+
     <section class="main">
+
         <div class="sec-div1">
-            <div>
-                <h5>BMI CALCULATOR</h5>
-                <p><i>To findout your BMI please provide the following fields:</i></p>
-                <label for="height">Height </label><input type="number" name="height" id="height"
-                    placeholder="(in Meters)" /><br>
-                <label for="weight">Weight</label><input type="number" name="weight" id="weight"
-                    placeholder="(in Kilograms)" /><br />
-                <label for="bmi">BMI &nbsp&nbsp&nbsp </label><input type="text" name="bmi" id="bmi"
-                    placeholder="Your BMI" disabled /><br>
-                <button id="calculate-btn">CALCULATE</button>
+            <h1 class="sections__heading">BMI CALCULATOR</h1>
+            <div class="two__column">
+
+                <div class="column">
+                    <div>
+                        <input type="number" name="height" id="height" placeholder="Input your Height in Meters" /><br>
+                        <input type="number" name="weight" id="weight"
+                            placeholder="Input your Weight in Kilogram" /><br />
+                        <input type="text" name="bmi" id="bmi" placeholder="Your BMI" disabled /><br>
+                        <button id="calculate-btn">CALCULATE</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="sec-div2">
+                        <h3 class="column__heading">Body Mass Index Levels</h3>
+
+                        <p>Underweight = 18.5</p>
+                        <p>Normal weight = 18.5–24.9</p>
+                        <p>Overweight = 25–29.9</p>
+                        <p>Obesity= BMI of 30 or greater</p>
+
+                    </div>
+
+
+
+                </div>
             </div>
+
         </div>
 
-        <div class="sec-div2">
-            <h3>Body Mass Index Levels</h3>
-            <ul>
-                <li><strong>Underweight</strong> = 18.5</li>
-                <li><strong>Normal weight</strong> = 18.5–24.9</li>
-                <li><strong>Overweight</strong> = 25–29.9</li>
-                <li><strong>Obesity</strong> = BMI of 30 or greater</li>
-            </ul>
-        </div>
+
 
         <div class="sec-div3" id="sec-div3">
             <h4 id="result-conclusion"></h4>

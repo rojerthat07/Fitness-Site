@@ -1,3 +1,12 @@
+.sections__heading{
+    width: 100%;
+    font-size:2em;
+
+    font-family: font("font1");
+    padding:1em;
+    text-align: left;
+}
+
 .two__column{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -12,6 +21,7 @@
 .column{
     width:100%;
     margin: auto;
+    height: 100%;
     .column__information{
         margin:1em 2em;
         .column__paragraph{
