@@ -1,5 +1,5 @@
 .navbar {
-    background-color: $color5;
+    background-color: $colorDark4;
     position: sticky;
     top: 0;
     border-bottom: 1px solid $color2;
@@ -20,8 +20,9 @@
         }
     }
     .navbar-nav {
-        margin-right: 10%;
+        margin-left: auto;
         .nav-item {
+            color:black;
             padding-right: 2em;
             font-family: font("font3");
             text-transform: uppercase;
