@@ -1,7 +1,7 @@
 .two__column{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin:3em auto;
+    margin:0em auto;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -10,9 +10,20 @@
 
 
 .column{
-    margin:90%;
+    width:100%;
     margin: auto;
+    .column__information{
+        margin:1em 2em;
+        .column__paragraph{
+            line-height: 2em;
+        }
+        .column__heading{
+            font-family: font("font5");
+        }
+    }
+   
     img{
         width:100%;
+        border-radius: 2px;
     }
 }

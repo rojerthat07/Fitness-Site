@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JCC GYM's</title>
+    <link rel="icon" href="/build/images/logo.png">
+    <!--Main Style Sheet-->
+    <link rel="stylesheet" href="/build/styles/style.min.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="/src/frameworks/fontawesome-free-5.11.2-web/css/all.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="/src/frameworks/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="/src/frameworks/Bootstrap/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="bg-overlay"></div>
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="#"> <img src="/build/images/logo.png" alt=""> JCC Gym</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/build/index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bmi-calculator.html">BMI CALCULATOR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OFFERS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--BMI CALCULATOR-->
+    <section class="main">
+        <div class="sec-div1">
+            <div>
+                <h5>BMI CALCULATOR</h5>
+                <p><i>To findout your BMI please provide the following fields:</i></p>
+                <label for="height">Height </label><input type="number" name="height" id="height"
+                    placeholder="(in Meters)" /><br>
+                <label for="weight">Weight</label><input type="number" name="weight" id="weight"
+                    placeholder="(in Kilograms)" /><br />
+                <label for="bmi">BMI &nbsp&nbsp&nbsp </label><input type="text" name="bmi" id="bmi"
+                    placeholder="Your BMI" disabled /><br>
+                <button id="calculate-btn">CALCULATE</button>
+            </div>
+        </div>
+
+        <div class="sec-div2">
+            <h3>Body Mass Index Levels</h3>
+            <ul>
+                <li><strong>Underweight</strong> = 18.5</li>
+                <li><strong>Normal weight</strong> = 18.5–24.9</li>
+                <li><strong>Overweight</strong> = 25–29.9</li>
+                <li><strong>Obesity</strong> = BMI of 30 or greater</li>
+            </ul>
+        </div>
+
+        <div class="sec-div3" id="sec-div3">
+            <h4 id="result-conclusion"></h4>
+            <p id="result-conclusion-tips"></p>
+        </div>
+
+        <div class="sec-div4" id="sec-div4">
+            <div id="body-types">
+                <h3 id="tips-for-you">Input Your Statistics</h3>
+            </div>
+
+            <div class="result" id="underweight">
+
+                <a href="#">
+                    <h4>Tips for Underweight</h4>
+                </a>
+                <a href="#">
+                    <h4>Workout Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Meal Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Diet Plan</h4>
+                </a>
+                <i>"No Pain, No Gain"</i>
+            </div>
+
+            <div class="result" id="normal">
+
+                <a href="#">
+                    <h4>Maintaining Tips</h4>
+                </a>
+                <a href="#">
+                    <h4>Workout Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Meal Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Diet Plan</h4>
+                </a>
+                <i>"It's never get's easier,<br />
+                    You Just get stronger"</i>
+            </div>
+
+            <div class="result" id="overweight">
+
+                <a href="#">
+                    <h4>Tips for Overweight</h4>
+                </a>
+                <a href="#">
+                    <h4>Workout Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Meal Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Diet Plan</h4>
+                </a>
+                <i>"There is no Elevator to Success,<br />
+                    You have to take the stairs"</i>
+            </div>
+
+            <div class="result" id="obese">
+
+                <a href="#">
+                    <h4>Tips for Obese</h4>
+                </a>
+                <a href="#">
+                    <h4>Workout Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Meal Plan</h4>
+                </a>
+                <a href="#">
+                    <h4>Diet Plan</h4>
+                </a>
+                <i>"Look in the Mirror,<br />That's your Competition"</i>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div>
+            <div class="contact__icons">
+                <i class="fab fa-github-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+
+            <p class="text-center" style="margin:0;"><small><b>© Mr. Jer Carlo D. Catallo, 2019 | All rights
+                        reserved.</b></small></p>
+            <p class="text-center" style="margin:0;"><small><b>Pampanga, Philippines.</b></small></p>
+        </div>
+
+    </div>
+
+
+    <!-- SCRIPT EXTENSION -->
+    <script src="/src/scripts/javascript.js"></script>
+    <!-- SCRIPT EXTENSION -->
+</body>
+
+</html>
