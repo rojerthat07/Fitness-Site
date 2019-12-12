@@ -1,9 +1,8 @@
 .sections__heading{
     width: 100%;
     font-size:2em;
-
     font-family: font("font1");
-    padding:1em;
+    padding:.5em;
     text-align: left;
 }
 
@@ -22,7 +21,12 @@
     width:100%;
     margin: auto;
     height: 100%;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     .column__information{
+      
         margin:1em 2em;
         .column__paragraph{
             line-height: 2em;
