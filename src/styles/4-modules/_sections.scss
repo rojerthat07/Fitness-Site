@@ -1,6 +1,6 @@
 .sections__heading{
     width: 100%;
-    font-size:2em;
+    font-size:1.8em;
     font-family: font("font1");
     padding:.5em;
     text-align: left;
@@ -15,6 +15,14 @@
     align-items: center;
 }
 
+.three__column{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0em auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 
 
 .column{
@@ -32,6 +40,10 @@
             line-height: 2em;
         }
         .column__heading{
+            font-family: font("font5");
+        }
+        .column__heading-2{
+            font-size:1.2em;
             font-family: font("font5");
         }
     }

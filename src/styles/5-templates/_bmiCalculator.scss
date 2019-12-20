@@ -1,20 +1,19 @@
-section.main {
+.main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 5px;
     text-align: center;
-    min-width: 460px;
+
+
 
     > div {
       padding: 15px;
-      height:50vh;
       background-color: $colorDark1;
       color: white;
       margin:1em;
-      border-radius: 2px;
+
     }
   
-
     
       & #calculate-btn {
         width: 110px;
@@ -39,62 +38,63 @@ section.main {
       }
     
   
-    .sec-div2{
-      padding: 15px;
-      height:100%;
-      background-color: $colorDark1;
-      color: white;
-      margin:1em;
-      border-radius: 2px;
-    }
+ 
   
-    .sec-div3 {
-      background-image: url(/build/images/time-for-war-M-new-video-simple-750x400.jpg);
-      background-size: cover;
-     
-      border-radius: 4px;
+    .sec-div3 {    
+    
       transition: 1s;
-      height: 300px;
+      display: grid;
+      align-content: center;
+      background-color: rgb(65, 64, 64);
+      color:$color1;
   
-      h4 {
+        h4 {
         transition: 1s;
-        margin-top: 40px;
         display: inline-block;
-        background-color: transparentize(black, 0.3);
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
         border-radius: 5px;
         padding: 10px;
+        margin:0;
         font-size: 50px;
       }
     }
   
     .sec-div4 {
       padding: 3px;
-      background-color: rgba(0,0,0,0.3);
-      border: none;
-      margin: 0;
+      background-color: white;
+      border: 1px solid black;
       height: auto;
+      grid-column: span 2;
+      text-align: left;
+      max-width:100vw;
     
      .result{
       margin:3em;
-     
+  
      }
       i {
-        color: rgb(145, 255, 0);
+        color: black;
         font-size: 20px;
-        text-shadow: 2px 2px 2px gray;
+        text-shadow: 1px 1px 2px gray;
       }
   
       h3 {
-        color: rgb(211, 255, 17);
-        background-color: $color5;
+        color: white;
+        background-color: $colorDark4;
         font-size: 1em;
         margin: 0;
         padding: 10px;
     
+    
+      }
+
+      h2{
+        color:$color3;
       }
   
       a {
-        color: white;
+        color: black;
         text-decoration: none;
   
         &:hover {
@@ -127,3 +127,5 @@ section.main {
       padding: 5px 15px;
     }
   }
+
+  
