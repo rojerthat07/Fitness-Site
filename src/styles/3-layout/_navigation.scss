@@ -1,13 +1,17 @@
 .navbar {
-    background-color: $colorDark4;
-    position: sticky;
-    top: 0;
-    border-bottom: 2px solid $color2;
+    background-color: rgba(252, 252, 252,0);
     z-index: 2;
+    color:white;
     .navbar-brand {
-        color: rgba(255, 166, 0, 0.9);
         font-family: 'Nanotech LLC';
         font-size: 1.7em;
+        color:white;
+        &:hover{
+            font-weight: bold;
+        }
+        .navbar-brand--red{
+            color:red;
+        }
      
         img {
             width: 45px;
@@ -22,12 +26,24 @@
     .navbar-nav {
         margin-left: auto;
         .nav-item {
-            color:black;
             padding-right: 2em;
             font-family: font("font3");
             text-transform: uppercase;
-            font-size: .9em;
-            .nav_link {}
+            font-size: 1.1em;
+            .nav-link {
+                color:$color1;
+                &:hover{
+                    color:white;
+                }
+                .nav-link--active{
+
+                }
+            }
         }
     }
+}
+
+
+.navbar--black-background{
+    background-color: $colorDark4;
 }

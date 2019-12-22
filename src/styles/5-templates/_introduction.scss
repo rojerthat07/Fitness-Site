@@ -1,0 +1,54 @@
+.introduction{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/build/images/introduction-photo.jpg");
+    background-size: cover;
+
+
+    .introduction__information{
+        margin:7em 2em;
+
+        .introduction__heading{
+            width:70%;
+            color:white;
+            font-size: 6.5em;
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: line-through;
+            font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .introduction__heading-2{
+            color:white;
+            font-size: 2em;
+            margin:0;
+        }
+    
+        .introduction__heading--red{
+            color:rgb(230, 29, 29);
+            text-decoration: none;
+        }
+
+        .introduction__paragraph{
+            color:white;
+            font-size:.8em;
+            width:60%;
+            margin:1em 0;
+        }
+        .introduction__button{
+            padding:.8em 2em;
+            font-size:.8em;
+            margin:3em;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            color:white;
+            float:right;
+            border:1px solid red;
+            background-color: rgba(0,0,0,0.6);
+            &:hover{
+                color:red;
+            }
+        }
+    }
+ 
+}
