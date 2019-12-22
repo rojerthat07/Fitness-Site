@@ -58,6 +58,7 @@
     margin: auto;
     height: 100%;
     display:grid;
+    margin:2em 0;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -70,16 +71,57 @@
         .column__heading{
             font-family: font("font5");
             font-size: 2em;
-            
+        }
+
+        .column__heading--gold{
+            color:$color1;
+            text-shadow: 1px 1px black;
         }
         .column__heading-2{
             font-size:1.2em;
             font-family: font("font5");
+        }
+        .column__button{
+            padding:.5em 2em;
+            border:1px solid black;
+            background-color: $color1;
+            border-radius: 2px;
+            color:black;
+            font-family: font("font4");
+            transition: .5s;
+            &:hover{
+                background-color: red;
+            }
+        }
+        .column__quotation{
+   
         }
     }
    
     img{
         width:100%;
         border-radius: 2px;
+    }
+}
+
+
+
+
+.fullheight-section{
+    text-align: center;
+    height:100vh;
+    width:100%;
+    padding:3em;
+    margin: auto;
+    display: grid;
+    color:white;
+    justify-content: center;
+    align-content: center;
+    background-color: $colorDark3;
+    .fullheight-section__heading{
+        color:$color1;
+        font-size: 2em;
+        padding: 2em 1em;
+        border-bottom: 1px solid red;
     }
 }
