@@ -1,18 +1,46 @@
-.sections__heading{
-    width: 100%;
-    font-size:1.8em;
-    font-family: font("font1");
-    padding:.5em;
-    text-align: left;
+.section__heading{
+    text-align: center;
+    font-style: italic;
+    margin:1.5em;
+    padding:.7em 0;
+    font-size: 2.5em;
+    font-family: font("font4");
+    border-bottom: 3px solid red;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 1px 2px 1px gray;
+}
+
+.section__description{
+    text-align: center;
+    font-size: 1em;
+    font-family: font("font3");
+    text-transform: uppercase;
 }
 
 .two__column{
+    width:100%;
     display:grid;
     grid-template-columns: 1fr 1fr;
     margin:0em auto;
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.showcase{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+    margin:0em auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    
+
+    padding:1em;
 }
 
 .three__column{
@@ -34,13 +62,14 @@
     align-items: center;
     align-content: center;
     .column__information{
-      
         margin:1em 2em;
         .column__paragraph{
             line-height: 2em;
+            font-size: .8em;
         }
         .column__heading{
             font-family: font("font5");
+            font-size: 2em;
             
         }
         .column__heading-2{
