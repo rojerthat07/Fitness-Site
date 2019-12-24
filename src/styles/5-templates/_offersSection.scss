@@ -1,0 +1,57 @@
+.offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    width:95%;
+    margin: auto;
+    justify-content: center;
+
+
+    .offers__offer{
+        margin:3em 0;
+    
+        text-align: center;
+        border:1px solid rgb(122, 122, 122);
+        border-radius: 2px;
+    
+   
+        .offers__heading{
+            font-size: 1.5em;
+            margin:.5em 0;
+            padding:.2em 1em;
+        }
+        .offers__description{
+            font-size: .9em;
+            padding:0 2em;
+        }
+    }
+
+    
+    .offers__offer:nth-child(1){
+        border-top: 5px solid rgb(85, 85, 85);
+    }
+    .offers__offer:nth-child(2){
+        border-top: 5px solid gold;
+    }
+    .offers__offer:nth-child(3){
+        border-top: 5px solid rgb(10, 239, 255);
+    }
+
+    .offers__feature{
+        display: block;
+        padding:.5em;
+    }
+
+    .offers__feature:nth-child(even){
+        background-color: rgb(221, 218, 218);
+    }
+
+    .offers__price{
+        font-size: 2em;
+    }
+
+    .offers__button{
+        
+    }
+   
+}
