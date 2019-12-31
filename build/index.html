@@ -154,8 +154,8 @@
   </a>
   </div>
 <hr>
-
-
+<h1 class="section__heading">we have many branches in your area!</h1>
+<div id="map"></div>
 
 <!--Footer-->
   <div class="footer">
@@ -207,9 +207,58 @@
 
   <p class="footer__copyright">2019 © Jer Carlo D. Catallo. All rights Reserved</p>
   </div>
- 
+
 
   <!-- SCRIPT EXTENSION -->
+
+  <!--Integrating Google Map API -->
+  <script>
+  
+  var map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 14.9351, lng: 120.4939},
+          zoom: 8
+        });
+
+     
+
+      //Add Marker
+        function addMarker(props){
+          var marker = new google.maps.Marker({
+            position:props.coords,
+            map:map
+        });
+
+        var infoWindow = new google.maps.InfoWindow({
+         content:props.content
+        });
+
+        marker.addListener('click', function(){
+          infoWindow.open(map,marker);
+        });
+        }
+        //Markers
+        addMarker({coords:{lat:15.0794,lng:120.6200}, content:'<h1><img src="/build/images/logo.png" alt=""> Pampanga Branch</h1>'});
+        addMarker({coords:{lat:14.5995,lng:120.9842}, content:'<h1><img src="/build/images/logo.png" alt=""> Manila Branch</h1>'});
+        addMarker({coords:{lat:15.4755,lng:120.5963}, content:'<h1><img src="/build/images/logo.png" alt=""> Tarlac Branch</h1>'});
+        addMarker({coords:{lat:14.8386,lng:120.2842}, content:'<h1><img src="/build/images/logo.png" alt=""> Olangapo Branch</h1>'});
+    
+          
+          
+    
+  
+      }
+
+    
+  </script>
+
+   <!-- Google Map API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvEjLTZvMtreSI20hvR-HeeI0RCjqkbas&callback=initMap"
+    async defer></script>
+
+
   <script src="/src/scripts/javascript.js"></script>
   <!-- SCRIPT EXTENSION -->
 </body>
