@@ -1,0 +1,55 @@
+.product-list{
+    width:95%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .product{
+        
+        padding:1em;
+        width:100%;
+        &:hover{
+            box-shadow: 1px 1px 2px gray;
+        }
+        .product__image{
+            width:100%;
+        }
+        .product__name{
+            text-transform: uppercase;
+            font-family: font("font3");
+            font-size: 1em;
+            padding-top:.7em;
+            line-height: 1.2em;
+        }
+        .product__price{
+            color:red;
+            font-size: 1.5em;
+        }
+        .product__discount{
+            display: inline;
+            text-decoration: line-through;
+            font-size: .7em;
+        }
+        .product__discount-percent{
+            display: inline;
+            font-size: .7em;
+        }
+        .product__button{
+            font-size: .9em;
+            display: block;
+            background-color: red;
+            color:white;
+            border: none;
+            font-family: font("font4");
+            padding:.5em 2em;
+            margin:.5em 0;
+            &:hover{
+                background-color: rgb(211, 12, 12);
+            }
+        }
+    }
+}
+
+
+
