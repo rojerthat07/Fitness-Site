@@ -15,13 +15,15 @@
         border-radius: 2px;
     
         .offers__heading{
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin:.5em 0;
             padding:.2em 1em;
             font-family: font("font3");
         }
         .offers__description{
-            font-size: .9em;
+            width:80%;
+            margin: auto;
+            font-size: .7em;
             padding:0 2em 1em 2em;
             font-family: font("font3");
         }
