@@ -1,0 +1,48 @@
+.ready{
+    text-align: center;
+
+    margin:2em 0;
+    .ready__image{
+        width:100%;
+        border-top: 1px solid gold;
+    }
+
+ 
+        
+        .ready__text{
+   
+            font-style: italic;
+            padding:1em;
+            font-size: 3em;
+            margin:1em 0;
+          
+        }
+
+        a{
+            &:hover{
+                text-decoration: none;
+               
+            }
+        }
+        .ready__button{
+            
+         font-size: 1.1em;
+         border:none;
+         font-family: font("font4");
+         background-color: red;
+         display: block;
+         width: 100%;
+         color:white;
+         padding:.3em 1.2em;
+         font-style: italic;
+
+         margin-bottom: 2em;
+    
+         &:hover{
+             color: black;
+            background-color: $color1;
+         }
+        }
+    
+    
+}

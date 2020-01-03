@@ -32,7 +32,7 @@ function calculateBMI() {
   var div3 = document.getElementById("sec-div3");
   var tips = document.getElementById("result-conclusion-tips");
   var bodyTypes = document.getElementById("body-types");
-  var tipsForYou = document.getElementById("tips-for-you").innerHTML = "Some of the TIPS for you";
+  var tipsForYou = document.getElementById("tips-for-you").innerHTML = "We have offers for you";
   //CHECKING IF THE INPUT FIELDS ARE EMPTY
   if (height == "" && weight == "") {
     bmi.value = '"Please put your Statistics"';
@@ -98,3 +98,4 @@ function calculateBMI() {
     }
   }
 }
+

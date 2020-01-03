@@ -1,3 +1,5 @@
+
+
 .navbar {
     background-color: rgba(252, 252, 252,0);
     z-index: 2;
@@ -39,6 +41,29 @@
 
                 }
             }
+
+            i{
+                font-size: 2em;
+                position: relative;
+                cursor: pointer;
+                &:hover{
+                    color:red;
+                }
+
+                span{
+                    border: 1px solid white;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    padding:.2em .4em;
+                    z-index: 1;
+                    position: absolute;
+                    bottom: -10px;
+                    right:-10px;
+                    font-size: .4em;
+                  
+                }
+            }
         }
     }
 }
@@ -47,3 +72,4 @@
 .navbar--black-background{
     background-color: $colorDark4;
 }
+
