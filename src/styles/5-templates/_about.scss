@@ -3,6 +3,9 @@
     margin:2em;
     .about__heading{
         font-family: font("font2");
+        @include tablet{
+            font-size: 1.5em;
+        }
     }
     .about__image{
        width:30%;
@@ -13,5 +16,8 @@
         font-family: font("font2");
         width:80%;
         margin: auto;
+        @include tablet{
+            font-size: .7em;
+        }
     }
 }

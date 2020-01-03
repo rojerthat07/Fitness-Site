@@ -9,6 +9,19 @@
     text-transform: uppercase;
     cursor: pointer;
     text-shadow: 1px 2px 1px gray;
+    @include laptop{
+        font-size: 2em;
+    }
+    @include mini-laptop{
+        font-size: 1.5em;
+    }
+    @include tablet{
+        font-size: 1.2em;
+    }
+    @include mobile{
+        font-size: 1em;
+        text-shadow: none;
+    }
 }
 
 .section__description{
@@ -26,6 +39,9 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    @include laptop{
+        grid-template-columns: 1fr;
+      }
 }
 
 .showcase{
@@ -38,9 +54,10 @@
     align-content: center;
     align-items: center;
     border-bottom: 1px solid black;
-    
-
     padding:1em;
+    @include mini-laptop{
+        grid-template-columns: 1fr;
+    }
 }
 
 .three__column{
@@ -50,6 +67,9 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+    @include mini-laptop{
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -62,20 +82,43 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    @include mini-laptop{
+        margin: 1em 0;
+    }
     .column__information{
         margin:1em 2em;
+        @include mini-laptop{
+            margin:0em 2em;
+            text-align: center;
+        }
         .column__paragraph{
             line-height: 2em;
             font-size: .8em;
+            @include laptop{
+                font-size: .7em;
+            }
+            @include mobile{
+                font-size: .6em;
+            }
         }
         .column__heading{
             font-family: font("font5");
             font-size: 2em;
+            @include laptop{
+                font-size: 1.2em;
+            }
+            @include mobile{
+                font-size: 1em;
+            }
+           
         }
 
         .column__heading--gold{
             color:$color1;
             text-shadow: 1px 1px black;
+            @include mobile{
+                text-shadow: none;
+            }
         }
         .column__heading-2{
             font-size:1.2em;
@@ -94,13 +137,19 @@
             }
         }
         .column__quotation{
-   
+            @include mini-laptop{
+                font-size: .7em;
+            }
         }
     }
    
     img{
         width:100%;
         border-radius: 2px;
+        @include mini-laptop{
+            width:50%;
+            margin: auto;
+        }
     }
 }
 
@@ -118,13 +167,95 @@
     justify-content: center;
     align-content: center;
     background-color: $colorDark3;
+    @include mini-laptop{
+        height: 100%;
+    }
     .fullheight-section__heading{
         color:$color1;
         font-size: 2em;
         padding: 2em 1em;
         border-bottom: 1px solid red;
+        @include mini-laptop{
+            font-size: 1em;
+        }
     }
 }
 
+
+
+.image__caption--container-left{
+    border-bottom: 1px solid black;
+    padding:2em;
+    width:100%;
+    height: 100%;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    margin:0em auto;
+    @include laptop{
+        padding:1em 1em;
+    }
+    @include tablet{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .column__quotation{
+        @include mini-laptop{
+            font-size: .7em;
+        }
+    }
+
+    .image__caption--image{
+        @include tablet{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        img{
+            width:100%;
+            border-radius: 2px;
+            @include mini-laptop{
+                width:50%;
+                margin: auto;
+            }
+        }
+    }
+    .image__caption--description{
+        margin:1em 2em;
+        @include mini-laptop{
+         
+            text-align: center;
+        }
+        .image__caption--heading{
+            font-family: font("font5");
+            font-size: 2em;
+            color:$color1;
+            text-shadow: 1px 1px black;
+            @include laptop{
+                font-size: 1.2em;
+            }
+            @include tablet{
+                font-size:1em;
+                }
+            @include mobile{
+                text-shadow: none;
+                font-size: 1em;
+            }
+           
+        }
+        .image__caption--information{
+            line-height: 2em;
+            font-size: .8em;
+            @include laptop{
+                font-size: .7em;
+            }
+            @include mobile{
+                font-size: .6em;
+            }
+        }
+    }
+}
 
 

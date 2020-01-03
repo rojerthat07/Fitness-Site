@@ -1,7 +1,15 @@
 #map{
-    width:50%;
-    height:400px;
+    width:70%;
+    height:500px;
     margin: 3em auto;
+    @include laptop{
+        width:70%;
+    }
+    @include mini-laptop{
+        width:80%;
+    height:300px;
+    }
+
 
     h1{
         color:$colorDark4;

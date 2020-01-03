@@ -3,9 +3,23 @@
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/build/images/introduction-photo.jpg");
     background-size: cover;
 
+  
+   
 
     .introduction__information{
         margin:7em 2em;
+        @include mini-laptop{
+            margin:5em 2em;
+        }
+        @include tablet{
+            margin:6em 2em;
+            text-align: center;
+        }
+
+        @include mobile{
+            margin:6em 2em;
+          
+        }
 
         .introduction__heading{
             width:70%;
@@ -15,12 +29,27 @@
             text-transform: uppercase;
             text-decoration: line-through;
             font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+            
+            @include mini-laptop{
+                width:100%;
+                font-size: 4.5em;
+            }
+            @include tablet{
+                font-size: 3em;
+            }
         }
 
         .introduction__heading-2{
             color:white;
             font-size: 2em;
             margin:0;
+            @include mini-laptop{
+                width:100%;
+                font-size: 1.5em;
+            }
+            @include tablet{
+                font-size: 1.2em;
+            }
         }
     
         .introduction__heading--red{
@@ -33,11 +62,18 @@
             font-size:.8em;
             width:60%;
             margin:1em 0;
+            @include mini-laptop{
+                width:100%;
+            }
+            @include tablet{
+                font-size: .7em;
+            }
         }
         .introduction__button{
             padding:.8em 2em;
+        
             font-size:.8em;
-            margin:3em;
+            margin:1em 3em;
             border-radius: 5px;
             border: none;
             font-weight: bold;
@@ -45,6 +81,16 @@
             float:right;
             border:1px solid red;
             background-color: rgba(0,0,0,0.6);
+            @include mini-laptop{
+                display: block;
+                font-size: .7em;
+                float:none;
+                margin:3em 0;
+            }
+            @include tablet{
+                font-size: .6em;
+                margin:3em auto;
+            }
             &:hover{
                 color:red;
             }

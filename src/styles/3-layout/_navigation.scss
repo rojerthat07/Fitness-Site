@@ -8,6 +8,9 @@
         font-family: 'Arvo', serif;
         font-size: 1.7em;
         color:white;
+        @include tablet{
+            font-size: 1.2em;
+        }
     
         .navbar-brand--red{
             color:red;
@@ -44,6 +47,7 @@
                 font-size: 2em;
                 position: relative;
                 cursor: pointer;
+               
                 &:hover{
                     color:red;
                 }

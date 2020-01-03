@@ -5,6 +5,14 @@
     width:95%;
     margin: auto;
     justify-content: center;
+    @include laptop{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    @include tablet{
+        grid-template-columns: 1fr ;
+    }
+  
 
 
     .offers__offer{
@@ -26,6 +34,10 @@
             font-size: .7em;
             padding:0 2em 1em 2em;
             font-family: font("font3");
+            @include mini-laptop{
+                width:90%;
+                font-size: .6em;
+            }
         }
     }
 
@@ -37,16 +49,28 @@
     }
     .offers__offer:nth-child(3){
         border-top: 5px solid rgb(10, 239, 255);
+        @include laptop{
+            grid-row:2;
+            grid-column:  span 2;
+        }
+        @include tablet{
+            grid-row: 3;
+            grid-column: 1;
+        }
     }
 
     .offers__feature{
         font-size: .8em;
         display: block;
         padding:.5em;
+        @include mini-laptop{
+            font-size: .6em;
+        }
     }
 
     .offers__feature:nth-child(even){
         background-color: rgb(240, 229, 212);
+        
     }
 
     .offers__price{
@@ -66,6 +90,10 @@
             font-size: .8em;
             font-family: font("font4");
             transition: .5s;
+            @include mini-laptop{
+        
+                font-size: .6em;
+            }
             &:hover{
                 background-color: rgb(223, 15, 15);
                 color:white;

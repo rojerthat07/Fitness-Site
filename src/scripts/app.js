@@ -1,5 +1,6 @@
 var storeMessage = document.getElementById("store-message");
 
+
 function counterCountAdd() {
     var count = document.getElementById("cart-count").firstChild.nodeValue;
     count++;
