@@ -1,6 +1,8 @@
 .about{
     text-align: center;
-    margin:2em;
+
+    max-width: 2000px;
+    margin: 2em auto;
     .about__heading{
         font-family: font("font2");
         @include tablet{
