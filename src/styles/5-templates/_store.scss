@@ -77,6 +77,22 @@
     left:1.5em;
     background: rgba(238, 238, 238, 1);
 
+    .store-message__subscribe{
+       a{
+           &:hover{
+            text-decoration: none;
+           }
+       }
+        .store-message__input{
+            padding: .2em .2em;
+            font-size: .9em;
+        }
+        .store-message__button{
+               font-size: .8em;
+            margin-left: 1em;
+        }
+    }
+
     .store-message__image{
         width:40%;
         margin:1em;
@@ -94,6 +110,7 @@
         border: none;
         color:rgb(243, 146, 0);
         &:hover{
+          
             color: white;
         }
     }

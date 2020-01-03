@@ -1,3 +1,17 @@
 .about{
     text-align: center;
+    margin:2em;
+    .about__heading{
+        font-family: font("font2");
+    }
+    .about__image{
+       width:30%;
+       
+    }
+    .about__text{
+        font-size: .9em;
+        font-family: font("font2");
+        width:80%;
+        margin: auto;
+    }
 }

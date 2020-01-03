@@ -23,7 +23,7 @@
       position: sticky;
       top:0;
     }
-  
+
     </style>
 </head>
 
@@ -31,7 +31,7 @@
 
 
   <!--Navigation-->
-  <nav class="navbar navbar-expand-md navbar--black-background">
+  <nav class="navbar navbar-expand-md navbar--black-background navbar-dark">
     <a class="navbar-brand" href="../index.html"> <img src="/build/images/logo.png" alt=""> Fitness <span class="navbar-brand--red">Seeker</span> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -57,6 +57,22 @@
       </ul>
     </div>
   </nav>
+<!--OFFERS MESSAGE-->
+  <div class="store-message" id="store-message">
+    <div>
+      <img src="/build/images/logo.png" alt="" class="store-message__image" style="width:30%;">
+      <p class="store-message__text">Coming Soon!</p> 
+      <div class="store-message__subscribe">
+        <p class="store-message__text" style="font-size: 1.2em;">Subscribe for the latest Updates</p> 
+        <input class="store-message__input" type="email" name="" id="" placeholder="Enter your Email Address">
+      <a href="../index.html">  <input class="store-message__button" type="submit" value="Subscribe" type="button"></a>
+      </div>
+
+     
+    </div>
+    
+    <button class="store-message__exit" onclick="storeMessageExit()">X</button>
+  </div>
 
 
 
@@ -75,7 +91,7 @@
         <div class="offers__feature">Instant product updates</div>
         <div class="offers__feature">Priority customer support</div>
         <div class="offers__price">$10.95</div>
-        <button class="offers__button">Apply Now</button>
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
     </div>
     <div class="offers__offer">
         <h1 class="offers__heading">Fitness Seeker Gold</h1>
@@ -92,7 +108,7 @@
         <div class="offers__feature">Priority customer support</div>
         <div class="offers__price">$39.95</div>
         
-        <button class="offers__button">Apply Now</button>
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
     </div>
     <div class="offers__offer">
         <h1 class="offers__heading">Fitness Seeker Premium</h1>
@@ -109,7 +125,7 @@
         <div class="offers__feature">Priority customer support</div>
         <div class="offers__price" style="text-decoration: line-through;">$199.95</div>
         <div class="offers__price">$99.95</div>
-        <button class="offers__button">Apply Now</button>
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
     </div>
 </div>
 
@@ -119,7 +135,7 @@
   <div class="footer">
     <div class="footer__content-container">
       <div class="footer__content">
-        <h1 class="footer__heading footer__heading--large" style="font-family: 'Nanotech LLC';">Fitness Seeker</h1>
+        <h1 class="footer__heading footer__heading--large" style="font-family: 'Arvo', serif;">Fitness Seeker</h1>
         <p class="footer__quotation">We move life!!!</p>
         <h1 class="footer__heading">About Us</h1>
         <p class="footer__paragraph">We want to help all of the people who wants to have a good health and physique</p>

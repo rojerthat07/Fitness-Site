@@ -1,8 +1,9 @@
-var count = document.getElementById("cart-count").firstChild.nodeValue;
+
 var storeMessage = document.getElementById("store-message");
 storeMessage.style.display = "none";
 
 function counterCountAdd(){
+    var count = document.getElementById("cart-count").firstChild.nodeValue;
     count++;
     document.getElementById("cart-count").firstChild.nodeValue = count;
 }
