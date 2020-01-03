@@ -1,0 +1,22 @@
+{
+  "name": "fitness-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojerthat07/Fitness-Site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rojerthat07/Fitness-Site/issues"
+  },
+  "homepage": "https://rojerthat07.github.io/Fitness-Site",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
