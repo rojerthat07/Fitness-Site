@@ -16,6 +16,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <!--ScrollMagic and Gsap Javascripts-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+   integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+   integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+   integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"
+   integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
   
 </head>
 
@@ -61,20 +70,20 @@
 </div>
 
 <!--Showcase Section-->
-<h1 class="section__heading">It's time to Master the game!</h1>
-<div class="showcase">
+<h1 class="section__heading" id="heading-1">It's time to Master the game!</h1>
+<div class="showcase" >
   <div class="column"> <img src="/build/images/gym.jpg" alt=""></div>
   <div class="column">
-    <div class="column__information">
+    <div class="column__information" id="showcase-1">
       <h1 class="column__heading column__heading--gold">WORLD CLASS FACILITIES.</h1>
       <p class="column__paragraph">No citizen has a right to be an amateur in the matter of physical training… what a disgrace it is for a man to grow old without ever seeing the beauty and strength of which his body is capable</p>
       <p class="column__quotation">–Socrates</p>
     </div>
   </div>
 </div>
-<div class="showcase">
+<div class="showcase" >
   <div class="column">
-    <div class="column__information">
+    <div class="column__information" id="showcase-2">
       <h1 class="column__heading column__heading--gold">AMAZING COACHES..</h1>
       <p class="column__paragraph">The fight is won or lost far away from witnesses, behind the lines, in the gym, and out there on the road, long before I dance under those lights.</p>
       <p class="column__quotation">-Muhammad Ali</p>
@@ -83,10 +92,10 @@
   </div>
   <div class="column"> <img src="/build/images/coach.jpg" alt=""></div>
 </div>
-<div class="showcase">
+<div class="showcase" >
   <div class="column"> <img src="/build/images/benefits.jpg" alt=""></div>
   <div class="column">
-    <div class="column__information">
+    <div class="column__information" id="showcase-3">
       <h1 class="column__heading column__heading--gold">GREAT BENEFITS...</h1>
       <p class="column__paragraph">The more you sweat in training, the less you bleed in combat.</p>
         <p class="column__quotation">-Navy SEAL’s</p>
@@ -122,7 +131,9 @@
     </div>
   </div>
 </div>
-
+<h1 class="section__heading" id="heading-2">we have branches in your area!</h1>
+<div id="map"></div>
+<h1 class="section__heading" id="heading-3">See whats going on!</h1>
   <!--Carousel-->
   <div id="demo" class="carousel slide" data-ride="carousel">
     <!--Indicators-->
@@ -152,8 +163,7 @@
   </a>
   </div>
 
-<h1 class="section__heading">we have branches in your area!</h1>
-<div id="map"></div>
+
 
 <div class="ready">
   <img class="ready__image" src="/build/images/bottom photo.png" alt="">
