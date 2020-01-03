@@ -18,5 +18,9 @@
   "homepage": "https://rojerthat07.github.io/Fitness-Site",
   "dependencies": {
     "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
   }
 }
