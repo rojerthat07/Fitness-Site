@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fitness Seeker Philippines</title>
+  <link rel="icon" href="../images/logo.png">
+  <!--Main Style Sheet-->
+  <link rel="stylesheet" href="../styles/style.min.css" />
+   <!--Font Awesome-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+    .navbar {
+      position: sticky;
+      top:0;
+    }
+
+    </style>
+</head>
+
+<body>
+
+
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar--black-background navbar-dark">
+    <a class="navbar-brand" href="../index.html"> <img src="../images/logo.png" alt=""> Fitness <span class="navbar-brand--red">Seeker</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">STORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="offers.html">OFFERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bmi-calculator.html">BMI CALCULATOR</a>
+        </li>
+       
+      </ul>
+    </div>
+  </nav>
+<!--OFFERS MESSAGE-->
+  <div class="store-message" id="store-message">
+    <div>
+      <img src="../images/logo.png" alt="" class="store-message__image" style="width:30%;">
+      <p class="store-message__text">Coming Soon!</p> 
+      <div class="store-message__subscribe">
+        <p class="store-message__text" style="font-size: 1.2em;">Subscribe for the latest updates</p> 
+        <input class="store-message__input" type="email" name="" id="" placeholder="Enter your Email Address">
+      <a href="../index.html">  <input class="store-message__button" type="submit" value="Subscribe" type="button"></a>
+      </div>
+
+     
+    </div>
+    
+    <button class="store-message__exit" onclick="storeMessageExit()">X</button>
+  </div>
+
+
+
+<div class="offers">
+    <div class="offers__offer">
+        <h1 class="offers__heading">Fitness Seeker Regular</h1>
+        <p class="offers__description">Our community forum is a great place to share helpful workout and nutrition information and cheer each other on. Share tips, challenges and triumphs, results and progress with Fitness Blender members from all over the world.</p>
+        <div class="offers__feature">1 Month Subscription</div>
+        <div class="offers__feature">Regular Membership</div>
+        <div class="offers__feature">Customer support</div>
+        <div class="offers__feature">Access to one Fitness Seeker Gym</div>
+        <div class="offers__feature">Guide from a number of respective Coaches</div>
+        <div class="offers__feature">2% Discount on our Products</div>
+        <div class="offers__feature">2% Discount for your friends</div>
+        <div class="offers__feature">Fitness Seeker T-Shirt</div>
+        <div class="offers__feature">Unlimited Water</div>
+        <div class="offers__feature">Unlimited Access all day</div>
+        <div class="offers__price">$10.95</div>
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
+    </div>
+    <div class="offers__offer">
+        <h1 class="offers__heading">Fitness Seeker Gold</h1>
+        <p class="offers__description">Sign up for a free membership & build your own workout program using our online workout calendar. You’ll be able to schedule your workouts, add new programs, track your workouts, save your favorite workout videos, and more.</p>
+        <div class="offers__feature">3 Months Subscription</div>
+        <div class="offers__feature">Gold Membership</div>
+        <div class="offers__feature">Customer support</div>
+        <div class="offers__feature">Access to all Fitness Seeker Gym in your country</div>
+        <div class="offers__feature">Guide from a number of respective Coaches</div>
+        <div class="offers__feature">5% Discount on our Products</div>
+        <div class="offers__feature">5% Discount for your friends</div>
+        <div class="offers__feature">Fitness Seeker T-Shirt</div>
+        <div class="offers__feature">Unlimited Water</div>
+        <div class="offers__feature">Unlimited Access all day</div>
+        <div class="offers__price">$39.95</div>
+        
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
+    </div>
+    <div class="offers__offer">
+        <h1 class="offers__heading">Fitness Seeker Premium</h1>
+        <p class="offers__description">Improve your body, health and mindset with our customized workout programs and meal plans that will guide and encourage you every step of the way. Our programs use our online workout videos to provide detailed, day-by-day instruction.</p>
+        <div class="offers__feature">1 Year Subscription</div>
+        <div class="offers__feature">VIP Treatment</div>
+        <div class="offers__feature">Priority customer support</div>
+        <div class="offers__feature">Access to Fitness Seeker Gym, all over the world</div>
+        <div class="offers__feature">Guide from all of the Coaches</div>
+        <div class="offers__feature">10% Discount on our Products</div>
+        <div class="offers__feature">10% Discount for your friends</div>
+        <div class="offers__feature">Fitness Seeker T-Shirt </div>
+        <div class="offers__feature">Unlimited Water</div>
+        <div class="offers__feature">Unlimited Access all day</div>
+        <div class="offers__price" style="text-decoration: line-through;">$199.95</div>
+        <div class="offers__price">$99.95</div>
+        <button class="offers__button" onclick="storeMessageAppear()">Apply Now</button>
+    </div>
+</div>
+
+
+
+<!--Footer-->
+  <div class="footer">
+    <div class="footer__content-container">
+      <div class="footer__content">
+        <h1 class="footer__heading footer__heading--large" style="font-family: 'Arvo', serif;">Fitness Seeker</h1>
+        <p class="footer__quotation">We move life!!!</p>
+        <h1 class="footer__heading">About Us</h1>
+        <p class="footer__paragraph">We want to help all of the people who wants to have a good health and physique</p>
+        <h1 class="footer__heading"></i>Contact Me</h1>
+        <p class="footer__paragraph"><i class="fas fa-phone footer__icon"></i>+63 9665 329 164</p>
+        <p class="footer__paragraph"><i class="fas fa-envelope-square footer__icon"></i>jercarlocatallo@gmail.com</p>
+  
+      </div>
+      <div class="footer__content">
+         <h1 class="footer__heading">Information</h1>
+        <a href="#" class="footer__text"> About Us</a>
+        <a href="#" class="footer__text"> More Search</a>
+       <a href="#" class="footer__text"> Blog</a>
+       <a href="#" class="footer__text">Testimonial</a>
+       <a href="#" class="footer__text">  Events</a>
+      </div>
+      <div class="footer__content">
+        <h1 class="footer__heading">Helpful Links</h1>
+        <a href="#" class="footer__text"> Services</a>
+        <a href="#" class="footer__text">Supports</a>
+       <a href="#" class="footer__text"> Terms & Condition</a>
+       <a href="#" class="footer__text">Privacy Policy</a>
+     
+      </div>
+      <div class="footer__content">
+        <h1 class="footer__heading"> Subscribe for More Info</h1>
+        <input class="footer__input" type="email" name="" id="" placeholder="Enter your Email Address">
+        <a href="../index.html"> <input class="footer__button" type="submit" value="Subscribe" type="button"></a>
+      </div>
+       
+    </div>
+    
+      
+   <hr class="hr">
+   <div class="footer__icons">
+    <i class="fab fa-github-square"></i>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+    
+  </div>
+
+
+  <p class="footer__copyright">2019 © Jer Carlo D. Catallo. All rights Reserved</p>
+  </div>
+ 
+
+  <!-- SCRIPT EXTENSION -->
+  <script src="../scripts/app.js"></script>
+  <script>
+  storeMessage.style.display = "none";
+  </script>
+  <!-- SCRIPT EXTENSION -->
+</body>
+
+</html>

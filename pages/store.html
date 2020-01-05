@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Fitness Seeker Philippines</title>
+  <link rel="icon" href="../images/logo.png">
+  <!--Main Style Sheet-->
+  <link rel="stylesheet" href="../styles/style.min.css" />
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+  .navbar {
+    position: sticky;
+    top:0;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+ 
+  <!--Navigation-->
+  <nav class="navbar navbar-expand-md navbar--black-background  navbar-dark">
+    <a class="navbar-brand" href="../index.html"> <img src="../images/logo.png" alt=""> Fitness <span class="navbar-brand--red">Seeker</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">STORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="offers.html">OFFERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="bmi-calculator.html">BMI CALCULATOR</a>
+        </li>
+        <li class="nav-item">
+          <i class="fas fa-shopping-cart" onclick="storeMessageAppear()"> <span id="cart-count">0</span> </i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Store Message-->
+  <div class="store-message" id="store-message">
+    <div>
+      <img src="../images/whey protein/optimum nutrition logo.png" alt="" class="store-message__image">
+      <p class="store-message__text">Please go to the Optimum Nutrition Official Site</p> 
+     <a href="https://www.optimumnutrition.com/en-us" target="_blank"><button class="store-message__button">Official Site</button></a> 
+     
+    </div>
+    <button class="store-message__exit" onclick="storeMessageExit()">X</button>
+  </div>
+  <!--Introduction-->
+  <img src="../images/whey protein/optimum nutrition head.jpeg"  class="store-image" alt="">
+  <div class="section-title">Partnership with Optimum Nutrition</div>
+ <!--Products List-->
+<div class="product-list">
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/GoldStandardWheyProtein.jpg">
+        <div class="product__name">ON GOLD STANDARD
+          100% WHEY</div>
+        <div class="product__price">$9.99</div>
+        <div class="product__discount">$20.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/gold-standard-casein-721.jpg">
+        <div class="product__name">ON GOLD STANDARD
+            100% CASEIN</div>
+        <div class="product__price">$35.99</div>
+        <div class="product__discount">$70.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/GS-ISOLATE_0.jpg">
+        <div class="product__name">ON GOLD STANDARD
+            100% ISOLATE</div>
+        <div class="product__price">$17.99</div>
+        <div class="product__discount">$34.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/on-isolate-6317.jpg">
+        <div class="product__name">ON ISOLATE</div>
+     
+        <div class="product__price">$56.99</div>
+        <div class="product__discount">$112.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/serious-mass-871.jpg">
+        <div class="product__name">ON SERIOUS MASS</div> 
+        <div class="product__price">$50.99</div>
+        <div class="product__discount">$100.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/Website_HydroWhey_Group.jpg">
+        <div class="product__name">ON PLATINUM
+            HYDROWHEY</div> 
+        <div class="product__price">$62.99</div>
+        <div class="product__discount">$142.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/pro-gainer-large_0.jpg">
+        <div class="product__name">ON PRO GAINER</div> 
+        <div class="product__price">$79.99
+            </div>
+        <div class="product__discount">$160.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/pro-complex-large.jpg">
+        <div class="product__name">ON PRO COMPLEX</div>
+        
+        <div class="product__price">$56.99</div>
+        <div class="product__discount">$112.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/gold-standard-egg-731_0.jpg">
+        <div class="product__name">ON GOLD STANDARD
+            100% EGG</div> 
+        <div class="product__price">$39.999</div>
+        <div class="product__discount">$80.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/gold-standard-gainer-6443.jpg">
+        <div class="product__name">ON GOLD STANDARD GAINER</div> 
+        <div class="product__price">$69.99
+            </div>
+        <div class="product__discount">$140.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/whey-gold-meal-6469.jpg">
+        <div class="product__name">ON WHEY
+            GOLD MEAL</div>
+        <div class="product__price">$37.99
+
+            </div>
+        <div class="product__discount">$74.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img class="product__image" src="../images/whey protein/naturally-flavored-whey-611.jpg">
+        <div class="product__name">ON NATURALLY FLAVORED
+            100% WHEY
+        </div>
+       
+        <div class="product__price">$59.99</div>
+        <div class="product__discount">$120.00</div> <div class="product__discount-percent">50%</div>
+        <button class="product__button" onclick="counterCountAdd()">Add to Cart</button>
+    </div>
+</div>
+ <!--Bottom Display Image-->
+<img src="/build/images/whey protein/optimum nutrition bottom.jpeg" alt="" class="mx-auto my-4 d-block" style="width:60%;">
+  
+<!--Footer-->
+  <div class="footer">
+    <div class="footer__content-container">
+      <div class="footer__content">
+        <h1 class="footer__heading footer__heading--large" style="font-family: 'Arvo', serif;">Fitness Seeker</h1>
+        <p class="footer__quotation">We move life!!!</p>
+        <h1 class="footer__heading">About Us</h1>
+        <p class="footer__paragraph">We want to help all of the people who wants to have a good health and physique</p>
+        <h1 class="footer__heading"></i>Contact Me</h1>
+        <p class="footer__paragraph"><i class="fas fa-phone footer__icon"></i>+63 9665 329 164</p>
+        <p class="footer__paragraph"><i class="fas fa-envelope-square footer__icon"></i>jercarlocatallo@gmail.com</p>
+  
+      </div>
+      <div class="footer__content">
+         <h1 class="footer__heading">Information</h1>
+        <a href="#" class="footer__text"> About Us</a>
+        <a href="#" class="footer__text"> More Search</a>
+       <a href="#" class="footer__text"> Blog</a>
+       <a href="#" class="footer__text">Testimonial</a>
+       <a href="#" class="footer__text">  Events</a>
+      </div>
+      <div class="footer__content">
+        <h1 class="footer__heading">Helpful Links</h1>
+        <a href="#" class="footer__text"> Services</a>
+        <a href="#" class="footer__text">Supports</a>
+       <a href="#" class="footer__text"> Terms & Condition</a>
+       <a href="#" class="footer__text">Privacy Policy</a>
+     
+      </div>
+      <div class="footer__content">
+        <h1 class="footer__heading"> Subscribe for More Info</h1>
+        <input class="footer__input" type="email" name="" id="" placeholder="Enter your Email Address">
+        <a href="../index.html"> <input class="footer__button" type="submit" value="Subscribe" type="button"></a>
+      </div>
+       
+    </div>
+    
+      
+   <hr class="hr">
+   <div class="footer__icons">
+    <i class="fab fa-github-square"></i>
+    <i class="fab fa-facebook-square"></i>
+    <i class="fab fa-twitter-square"></i>
+    <i class="fab fa-instagram"></i>
+    
+  </div>
+
+
+  <p class="footer__copyright">2020 © Jer Carlo D. Catallo. All rights Reserved</p>
+  </div>
+
+
+  <!-- SCRIPT EXTENSION -->
+
+  <script src="../scripts/app.js"></script>
+  <script>
+    storeMessage.style.display = "none";
+    </script>
+  <!-- SCRIPT EXTENSION -->
+</body>
+
+</html>
